@@ -21,9 +21,9 @@ Considerations:
 
 | Input       | Output           |
 | ----------- | ---------------- |
-| "M"         | "0,1,N"          |
-| "RMMMMLMML" | "4,2,E"          |
-| "MM"        | "0,1,N,Blocked!" |
+| "M"         | "0,1:N"          |
+| "RMMMMLMML" | "4,2:E"          |
+| "MM"        | "0,1:N,Blocked!" |
 
 ### Technologies used
 
