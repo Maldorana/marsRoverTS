@@ -7,7 +7,7 @@ describe('Mars Rover Test', () => {
       expect(rover.execute('')).toBe('0,0:N');
     });
   });
-  describe('Rotating', () => {
+  describe('Rotating right', () => {
     it('should rotate the rover to the right (90°)', () => {
       const rover = new Rover();
       expect(rover.execute('R')).toBe('0,0:E');
@@ -23,6 +23,16 @@ describe('Mars Rover Test', () => {
     it('should rotate the rover to the right (360°)', () => {
       const rover = new Rover();
       expect(rover.execute('RRRR')).toBe('0,0:N');
+    });
+  });
+  describe('Rotating left', () => {
+    it('should rotate the rover to the left (90°)', () => {
+      const rover = new Rover();
+      expect(rover.execute('L')).toBe('0,0:W');
+    });
+    it('should rotate the rover to the left (360°)', () => {
+      const rover = new Rover();
+      expect(rover.execute('LLLL')).toBe('0,0:N');
     });
   });
 });
