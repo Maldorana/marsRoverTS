@@ -66,5 +66,9 @@ describe('Mars Rover Test', () => {
       const rover = new Rover();
       expect(rover.execute('RRM')).toBe('9,0:S');
     });
+    it('should wrap the map when rover moves too far right', () => {
+      const rover = new Rover();
+      expect(rover.execute('RMMMMMMMMMM')).toBe('0,0:E');
+    });
   });
 });
