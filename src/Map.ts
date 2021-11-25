@@ -6,7 +6,7 @@ export class Map {
     let y = position.y;
     let x = position.x;
 
-    if (direction.toString() === 'N') y++;
+    if (direction.toString() === 'N') y = (y + 1) % 10;
     if (direction.toString() === 'E') x++;
     if (direction.toString() === 'S') y--;
     if (direction.toString() === 'W') x--;

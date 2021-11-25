@@ -57,4 +57,10 @@ describe('Mars Rover Test', () => {
       expect(rover.execute('RMMMLLMM')).toBe('0,1:W');
     });
   });
+  describe('Wrap the map', () => {
+    it('should wrap the map when rover moves too far up', () => {
+      const rover = new Rover();
+      expect(rover.execute('MMMMMMMMMMM')).toBe('1,0:N');
+    });
+  });
 });
