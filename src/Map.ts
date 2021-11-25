@@ -12,7 +12,7 @@ export class Map {
     if (direction.toString() === 'N') y = (y + 1) % MAX_Y;
     if (direction.toString() === 'E') x = (x + 1) % MAX_X;
     if (direction.toString() === 'S') y === 0 ? (y = MAX_Y - 1) : y--;
-    if (direction.toString() === 'W') x--;
+    if (direction.toString() === 'W') x === 0 ? (x = MAX_X - 1) : x--;
 
     return new Position(y, x);
   }
