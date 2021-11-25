@@ -23,7 +23,7 @@ Considerations:
 | ----------- | ---------------- |
 | "M"         | "0,1:N"          |
 | "RMMMMLMML" | "4,2:E"          |
-| "MM"        | "0,1:N,Blocked!" |
+| "MM"        | "0,1:N|BLOCKED|" |
 
 ### Technologies used
 
