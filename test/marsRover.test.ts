@@ -35,4 +35,10 @@ describe('Mars Rover Test', () => {
       expect(rover.execute('LLLL')).toBe('0,0:N');
     });
   });
+  describe('Changing position', () => {
+    it('should move the rover 1 position up', () => {
+      const rover = new Rover();
+      expect(rover.execute('M')).toBe('1,0:N');
+    });
+  });
 });
