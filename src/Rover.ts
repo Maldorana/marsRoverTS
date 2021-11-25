@@ -11,6 +11,6 @@ export class Rover {
       if (command === 'L') this.direction.rotateLeft();
       if (command === 'M') this.position.y++;
     }
-    return `${this.position.y},${this.position.x}:${this.direction}`;
+    return `${this.position}:${this.direction}`;
   }
 }
