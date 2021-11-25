@@ -9,6 +9,7 @@ export class Map {
     if (direction.toString() === 'N') y++;
     if (direction.toString() === 'E') x++;
     if (direction.toString() === 'S') y--;
+    if (direction.toString() === 'W') x--;
 
     return new Position(y, x);
   }
