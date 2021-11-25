@@ -1,10 +1,12 @@
-export class Rover {
-  private direction = 'N';
+import { Direction } from './Direction';
 
-  execute(command: string): string {
-    if (command === 'RRR') this.direction = 'W';
-    if (command === 'RR') this.direction = 'S';
-    if (command === 'R') this.direction = 'E';
+export class Rover {
+  private direction = new Direction();
+
+  execute(commands: string): string {
+    for (let command of commands) {
+      if (command === 'R') this.direction.rotateRight();
+    }
     return `0,0:${this.direction}`;
   }
 }
