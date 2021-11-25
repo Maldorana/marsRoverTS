@@ -5,6 +5,7 @@ export class Direction {
 
   rotateRight(): void {
     this.position++;
+    if (this.position === 4) this.position = 0;
   }
 
   toString(): string {

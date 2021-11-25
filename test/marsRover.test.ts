@@ -20,5 +20,9 @@ describe('Mars Rover Test', () => {
       const rover = new Rover();
       expect(rover.execute('RRR')).toBe('0,0:W');
     });
+    it('should rotate the rover to the right (360°)', () => {
+      const rover = new Rover();
+      expect(rover.execute('RRRR')).toBe('0,0:N');
+    });
   });
 });
