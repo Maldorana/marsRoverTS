@@ -12,6 +12,7 @@ export class Rover {
       if (command === 'M') {
         if (this.direction.toString() === 'N') this.position.y++;
         if (this.direction.toString() === 'E') this.position.x++;
+        if (this.direction.toString() === 'S') this.position.y--;
       }
     }
     return `${this.position}:${this.direction}`;
