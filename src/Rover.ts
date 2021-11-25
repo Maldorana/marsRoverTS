@@ -9,7 +9,10 @@ export class Rover {
     for (const command of commands) {
       if (command === 'R') this.direction.rotateRight();
       if (command === 'L') this.direction.rotateLeft();
-      if (command === 'M') this.position.y++;
+      if (command === 'M') {
+        if (this.direction.toString() === 'N') this.position.y++;
+        if (this.direction.toString() === 'E') this.position.x++;
+      }
     }
     return `${this.position}:${this.direction}`;
   }
